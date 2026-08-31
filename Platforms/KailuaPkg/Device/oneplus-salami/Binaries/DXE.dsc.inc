@@ -10,7 +10,7 @@ MdeModulePkg/Core/RuntimeDxe/RuntimeDxe.inf
 MdeModulePkg/Universal/SecurityStubDxe/SecurityStubDxe.inf
 QcomPkg/Drivers/VerifiedBootDxe/VerifiedBootDxe.inf
 QcomPkg/Drivers/ShmBridgeDxe/ShmBridgeDxeLA.inf
-QcomPkg/Drivers/TzDxe/ScmDxeLA_Kailua.inf
+QcomPkg/Drivers/TzDxe/ScmDxeCompat.inf
 QcomPkg/Drivers/TzDxe/TzDxeLA.inf
 QcomPkg/Drivers/PsStateDxe/PsStateDxe.inf
 MdeModulePkg/Universal/WatchdogTimerDxe/WatchdogTimer.inf

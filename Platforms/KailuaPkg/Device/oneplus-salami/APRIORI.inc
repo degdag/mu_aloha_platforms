@@ -41,8 +41,8 @@ APRIORI DXE {
     }
 
     FILE DRIVER = 16E48F1F-7944-4BAA-BCA5-2D0CB788A904 {
-        SECTION PE32 = $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/TzDxe/ScmDxeLA_Kailua.efi
-        SECTION UI = "ScmDxeLA_Kailua"
+        SECTION PE32 = $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/TzDxe/ScmDxeCompat.efi
+        SECTION UI = "ScmDxeCompat"
     }
 
     INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/TLMMDxe/TLMMDxe.inf
@@ -83,8 +83,8 @@ APRIORI DXE {
 #        SECTION UI = "FeatureEnablerDxe"
 #    }
 
-#    INF AndromedaPkg/Driver/DisplayCallerDxe/DisplayCallerDxe.inf
-#    INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/PatchedBinaries/DisplayDxe.inf
+    INF AndromedaPkg/Driver/DisplayCallerDxe/DisplayCallerDxe.inf
+    INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/PatchedBinaries/DisplayDxe.inf
 
     INF AndromedaPkg/Driver/SimpleFbDxe/SimpleFbDxe.inf
     INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/FvUtilsDxe/FvUtilsDxe.inf
@@ -137,8 +137,8 @@ APRIORI DXE {
         SECTION UI = "UsbMassStorageDxe"
     }
 
-    INF QcomPkg/PatchedBinaries/UsbConfigDxe.inf
-    INF QcomPkg/PatchedBinaries/ButtonsDxe.inf
+    INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/PatchedBinaries/UsbConfigDxe.inf
+    INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/PatchedBinaries/ButtonsDxe.inf
     INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/TsensDxe/TsensDxe.inf
     INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/UsbDeviceDxe/UsbDeviceDxe.inf
     INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/UsbMassStorageDxe/UsbMassStorageDxe.inf
